@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 3</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      ul {
+        list-style: none;
+        padding-left: 5px;
+      }
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      .bar {
+        background-color: #f9f9fb;
+        padding: 15px;
+        border-top: solid 1px #cdcdcd;
+        border-bottom: solid 1px #cdcdcd;
+      }
+      .content {
+        max-width: 1440px;
+        margin: auto;
+        grid-gap: 3rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-areas: "sidebar main anchors";
+        grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(
+            0,
+            15rem
+          );
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .footer {
+        min-height: 100px;
+        border-top: solid 1px #cdcdcd;
+        font-size: 12px;
+      }
+      .anchors {
+        border-left: solid 1px #cdcdcd;
+        padding-left: 15px;
+      }
+      #sidebar {
+        border-right: solid 1px #cdcdcd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      figure {
+        text-align: center;
+      }
+      table {
+        text-align: center;
+      }
+      nav ul {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="inicio">
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/pt/8/80/Grand_Theft_Auto_V_capa.png"
+          width="200"
+          alt="capa do jogo GTA 5"
+        />
+      </figure>
+    </header>
+
+    <div class="bar"></div>
+
+    <div class="content">
+      <aside id="sidebar">
+        <h2>Jogo de videogame</h2>
+        <ul>
+          <li>
+            <a href="https://pt.wikipedia.org/wiki/Grand_Theft_Auto_V">GTA V</a>
+          </li>
+          <li>
+            <a href="https://pt.wikipedia.org/wiki/EA_Sports_FC_(s%C3%A9rie)"
+              >Fifa</a
+            >
+          </li>
+          <li>
+            <a href="https://pt.wikipedia.org/wiki/Fortnite_Battle_Royale"
+              >Fortinite</a
+            >
+          </li>
+          <li><a href="https://pt.wikipedia.org/wiki/Valorant">Valorant</a></li>
+          <li>
+            <a href="https://pt.wikipedia.org/wiki/League_of_Legends"
+              >League of legends</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <h1>Tudo sobre GTA V</h1>
+        <p>
+          <strong>Grand Theft Auto V</strong> é um jogo eletrônico de
+          ação-aventura desenvolvido pela Rockstar North e publicado pela
+          Rockstar Games. É o sétimo título principal da série Grand Theft Auto
+          e foi lançado originalmente em 17 de setembro de 2013 para PlayStation
+          3 e Xbox 360, com remasterizações lançadas em 2014 para PlayStation 4
+          e Xbox One, em 2015 para Microsoft Windows e em 2022 para PlayStation
+          5 e Xbox Series X/S. O jogo se passa no estado ficcional de San
+          Andreas, com a história da campanha um jogador seguindo três
+          criminosos e seus esforços para realizarem assaltos sob a pressão de
+          uma agência governamental. O mundo aberto permite que os jogadores
+          naveguem livremente pelas áreas rurais e urbanas de San Andreas.
+        </p>
+        <p>
+          A jogabilidade é mostrada em uma perspectiva de primeira ou terceira
+          pessoa e o mundo pode ser atravessado a pé ou com veículos. Os
+          jogadores controlam três protagonistas e podem alternar entre eles
+          durante e fora das missões. A história é centrada em sequências de
+          assaltos, com muitas missões envolvendo a jogabilidade de tiro e
+          direção. Um sistema de "procurado" define a resposta e agressividade
+          das forças da lei contra os crimes cometidos pelo jogador. O modo
+          multijogador, Grand Theft Auto Online, permite que até trinta
+          jogadores explorem o mundo e entrem em partidas competitivas ou
+          cooperativas.
+        </p>
+
+        <h2 id="jogabilidade">Jogabilidade</h2>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/pt/b/b6/GTA_V-gameplay-Trevor.png"
+            alt=""
+            width="400"
+          />
+          <figcaption>
+            <p>
+              Os jogadores são capazes de se protegerem atrás de objetos para
+              que não tomem danos de inimigos.
+            </p>
+          </figcaption>
+        </figure>
+        <p>
+          Grand Theft Auto V é um jogo eletrônico de ação-aventura que pode ser
+          jogado a partir de uma perspectiva em terceira pessoa ou primeira
+          pessoa, porém esta última é disponível apenas nas plataformas
+          PlayStation 4, Xbox One e Microsoft Windows. Os jogadores completam
+          missões, que são cenários lineares com objetivos definidos, a fim de
+          progredirem pela história principal. Os jogadores podem vagar
+          livremente pelo mundo de jogo quando não estão dentro de missões. O
+          mundo é composto pela área rural do estado de San Andreas e pela
+          cidade ficcional de Los Santos, com sua área total sendo bem maior do
+          que em títulos anteriores da série. O mapa pode ser explorado
+          completamente assim que o prólogo é completado, porém a progressão na
+          história libera mais conteúdos de jogabilidade.
+        </p>
+        <p>
+          Os jogadores podem usar ataques corpo-a-corpo, armas de fogo e
+          explosivos acessados através de uma roda de armamentos a fim de
+          combaterem inimigos, tendo a capacidade de navegar pelo mundo por meio
+          de automóveis, aeronaves, barcos e a pé. O jogo reintroduz tipos de
+          veículos ausentes de Grand Theft Auto IV para poder acomodar o tamanho
+          de seu mapa, como por exemplo aviões.
+        </p>
+
+        <h2 id="objetivo_de_projeto">Objetivos de projeto</h2>
+        <p>
+          Grand Theft Auto V foi pensado para aprimorar as mecânicas principais
+          da série Grand Theft Auto ao dar para o jogador três protagonistas
+          para escolher. A principal motivação da equipe para incluir três
+          personagens jogáveis era para o jogo inovar na narrativa e impedir que
+          a franquia parecesse estagnada por não evoluir sua principal estrutura
+          de jogabilidade. Houser comentou: "Nós não queríamos fazer as mesmas
+          coisas sempre". O conceito de ter três protagonistas interconectados
+          foi pensado durante o desenvolvimento de Grand Theft Auto: San
+          Andreas, porém a equipe sentiu que não possuíam as capacidades
+          técnicas para realizá-lo. Garbut explicou: "Não funcionava de um ponto
+          de vista técnico porque três personagens precisam três vezes mais
+          memória, três tipos de animação e assim por diante". A equipe
+          desenvolveu em 2009 os conteúdos episódicos The Lost and Damned e The
+          Ballad of Gay Tony após o lançamento de Grand Theft Auto IV, cada um
+          apresentando um novo protagonista. As três histórias interligadas
+          foram bem recebidas pela crítica e confirmaram para a equipe que
+          construir Grand Theft Auto V ao redor desse modelo era uma decisão
+          inovadora.
+        </p>
+        <p>
+          A história um jogador ao redor de três personagens foi um dos
+          primeiros objetivos de projeto estabelecidos para Grand Theft Auto V.
+          Garbut achou um risco uma mudança tão radical sobre as principais
+          mecânicas de jogabilidade, comentando as preocupações da equipe de que
+          se afastar do tradicional estabelecimento de um único protagonista
+          "poderia sair pela culatra". O jogo contava três histórias diferentes
+          e separadas para cada um dos protagonistas nas primeiras
+          conceitualizações. O conceito que as trajetórias das histórias se
+          encontrariam no decorrer do jogo foi desenvolvido posteriormente a
+          partir da histórias de Grand Theft Auto IV. O conceito eventualmente
+          evoluiu para três narrativas interconectadas que se entrelaçariam no
+          decorrer das missões. De acordo com o produtor e projetista Leslie
+          Benzies, a equipe fez da fórmula multi personagem uma parte "integral
+          da estrutura da jogabilidade e também da narrativa". Houser opinou que
+          Grand Theft Auto V foi "nosso jogo mais fortemente traçado pois os
+          personagens estão tão interligados" e que os "pontos de encontro
+          (entre as histórias dos protagonistas) são bem excitantes".
+        </p>
+
+        <h2 id="personagens">Personagens</h2>
+        <p>
+          A equipe se inspirou em arquétipos de protagonistas de jogos durante a
+          fase de roteirização de seus personagens. Michael foi considerado a
+          personificação da ganância, Franklin a ambição e Trevor a insanidade.
+          Houser achou que a Rockstar caracterizou Michael e Trevor como
+          justaposições um do outro. Ele disse: "Michael é como um criminoso que
+          quer compartimentar e ser um cara legal parte do tempo, e Trevor é um
+          maníaco que não é hipócrita". Houser achou que os três protagonistas
+          ajudariam a levar a história de Grand Theft Auto V para um território
+          mais original do que seus predecessores, que tradicionalmente seguiam
+          a ascensão de um único personagem principal através do submundo
+          criminal.
+        </p>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/0f/GTA_V_Protagonistas.png/320px-GTA_V_Protagonistas.png"
+            alt="Imagem com os três personagens do GTA"
+          />
+          <figcaption>
+            Os três protagonistas: <strong>Michael, Franklin e Trevor</strong>
+          </figcaption>
+        </figure>
+
+        <h2>Relançamento</h2>
+        <p>
+          A versão remasterizada de Grand Theft Auto V também foi aclamada pela
+          crítica. O Metacritic calculou uma nota média de 97/100 baseado em 66
+          resenhas para a versão de PlayStation 4 e 14 resenhas para a versão de
+          Xbox One, enquanto a versão para Microsoft Windows ficou com uma nota
+          de 96/100 baseada em 48 críticas.
+        </p>
+        <p>
+          Andrew Reiner da Game Informer considerou a adição do modo em primeira
+          pessoa como "outro avanço significativo para a série" da mesma maneira
+          que Grand Theft Auto III mudou para uma perspectiva em terceira pessoa
+          depois da visão aérea de Grand Theft Auto e Grand Theft Auto 2. Mark
+          Walton da GameSpot achou que jogar em primeira pessoa aumentava o
+          impacto da violência do título, algo que lhe fez refletir sobre a
+          moralidade e motivações dos personagens mais do que antes.[186] A
+          VideoGamer.com opinou que os jogadores sentiam-se habitantes do mundo
+          em vez de uma "arma presa em uma câmera flutuante".
+        </p>
+        <table
+          border="2"
+          width="300"
+          align="center"
+          cellspacing="0"
+          cellpadding="5"
+        >
+          <thead>
+            <tr>
+              <th colspan="2">Recepção</th>
+            </tr>
+            <tr>
+              <th colspan="2">Resenha crítica</th>
+            </tr>
+            <tr>
+              <th>Publicação</th>
+              <th>Nota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Edge</td>
+              <td>10/10</td>
+            </tr>
+            <tr>
+              <td>Eurogamer</td>
+              <td>9/10</td>
+            </tr>
+            <tr>
+              <td>Game Informer</td>
+              <td>9.75/10</td>
+            </tr>
+            <tr>
+              <td>GameSpot</td>
+              <td>9/10</td>
+            </tr>
+            <tr>
+              <td>IGN</td>
+              <td>10/10</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="2">Pontuação global</th>
+            </tr>
+            <tr>
+              <th>Agregador</th>
+              <th>Nota média</th>
+            </tr>
+            <tr>
+              <td>Metacritic</td>
+              <td>97/100</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <h2 id="controversias">Controvérsias</h2>
+        <br />
+        <h3>Tortura</h3>
+        <p>
+          A missão "Ao Pé da Letra" gerou controvérsias por parte de alguns
+          críticos e comentaristas devido sua representação de tortura. Na
+          missão, Trevor interroga um homem chamado de Sr. K. com o objetivo de
+          extrair informações sobre um fugitivo azerbaijano que supostamente é
+          uma ameaça para o FIB. Trevor utiliza diversos equipamentos de tortura
+          que os jogadores escolhem de uma mesa e os usam no homem imobilizado.
+          Trevor é encarregado de matar o Sr. K. assim que este passa a
+          informação necessária para o FIB, porém o protagonista o leva para o
+          aeroporto, dando-lhe a oportunidade de escapar. Trevor fala durante a
+          viagem sobre a inefetividade da tortura, salientando a prontidão do
+          Sr. K. em dar a informação ao FIB sem a necessidade de ser torturado,
+          expressando que tortura é usada para estabelecer poder e "para nos
+          impor".
+        </p>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/0c/Grand_Theft_Auto_V_-_Ao_P%C3%A9_da_Letra.png/270px-Grand_Theft_Auto_V_-_Ao_P%C3%A9_da_Letra.png"
+            alt="a imagem mostra missão de tortura"
+          />
+          <figcaption>
+            A missão "Ao Pé da Letra" envolve uma sequência em que o jogador
+            utiliza técnicas de tortura para interrogar um homem
+          </figcaption>
+        </figure>
+
+        <h3>Misoginia</h3>
+        <p>
+          Alguns críticos afirmaram que a representação das mulheres era
+          misógina. Plante sentiu que as personagens femininas coadjuvantes
+          foram construídas a partir de estereótipos, escrevendo que o
+          "tratamento das mulheres é uma relíquia da atual geração". Todd
+          Martens do Los Angeles Times considerou como sem criatividade as
+          representações satíricas das mulheres, comentando que temas violentos
+          e sexistas prejudicavam a experiência do jogo. A Edge salientou que
+          apesar de "toda mulher no jogo existir unicamente para ser zombada,
+          encarada ou gozada", elas tratavam os protagonistas masculinos de
+          maneira similar através de suas tendências estereotipadas com a
+          violência.
+        </p>
+        <blockquote>
+          "Mas é o argumento [dos críticos] que há prostitutas e strippers em um
+          jogo sobre criminosos, capangas e vida nas ruas – que isso é
+          inapropriado? Eu não acho que nos divertimos nos maus tratos
+          infligidos às mulheres de forma alguma. Só acho que no mundo em que
+          estamos representando, em Grand Theft Auto, é apropriado." — Dan
+          Houser
+        </blockquote>
+        <p>
+          Dave Cook da VG24/7 reforçou o sentimento que as personagens femininas
+          eram construídas como estereótipos: "Ou elas estão lá para serem
+          resgatadas, gritadas, comidas, serem vistas fodendo, toleradas,
+          ouvidas tagarelando como se estivessem aborrecidas em seus celulares
+          ou comprando".
+        </p>
+        <h2 id="historia">História</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/lNAGX7puqwk?si=BMAh1J8vP5iDcPED"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h2 id="referencias">Referências</h2>
+        <ol>
+          <li>
+            Pitcher, Jenna (9 de outubro de 2013). «Grand Theft Auto 5 smashes 7
+            Guinness World Records». Polygon. Consultado em 25 de dezembro de
+            2016
+          </li>
+          <li>
+            Hamilton, Kirk (24 de setembro de 2013). «Five Ways You Can Make
+            Grand Theft Auto V More Immersive». Kotaku. Consultado em 25 de
+            dezembro de 2016
+          </li>
+          <li>
+            Krupa, Daniel (4 de novembro de 2014). «Grand Theft Auto 5: A New
+            Perspective». IGN. Consultado em 25 de dezembro de 2016
+          </li>
+          <li>
+            Simmons, Alex (12 de novembro de 2012). «Grand Theft Auto V:
+            Reinventing the Open-World Rulebook». IGN. Consultado em 25 de
+            dezembro de 2016
+          </li>
+          <li>
+            Hussain, Tamoor (8 de novembro de 2012). «GTA V world 'is bigger
+            than Red Dead Redemption, San Andreas and GTA 4 combined'». Computer
+            and Video Games.
+          </li>
+          <li>
+            Simmons, Alex (13 de novembro de 2012). «Grand Theft Auto 5's Unseen
+            Mastermind». IGN. Consultado em 25 de dezembro de 2016
+          </li>
+          <li>
+            Bogenn, Tim; Barba, Rick (2013). Grand Theft Auto V Signature Series
+            Strategy Guide. Estados Unidos: BradyGames. p. 7. ISBN 9780744014679
+          </li>
+          <li>
+            Bogenn, Tim; Barba, Rick (2013). Grand Theft Auto V Signature Series
+            Strategy Guide. Estados Unidos: BradyGames. p. 10. ISBN
+            9780744014679
+          </li>
+          <li>
+            Stuart, Keith (12 de novembro de 2012). «Grand Theft Auto V preview:
+            the inside story». The Guardian. Consultado em 25 de dezembro de
+            2016
+          </li>
+          <li>
+            Hoggins, Tom (2 de maio de 2013). «Grand Theft Auto V preview». The
+            Daily Telegraph. Consultado em 25 de dezembro de 2016
+          </li>
+        </ol>
+      </main>
+
+      <aside class="anchors">
+        <h2>Neste Artigo</h2>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#jogabilidade">Jogabilidade</a></li>
+          <li><a href="#objetivo_de_projeto">Objetivos de projeto</a></li>
+          <li><a href="#personagens">Personagens</a></li>
+          <li><a href="#controversias">Controvérsias</a></li>
+          <li><a href="#referencias">Referências</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <ul>
+        <li>
+          Esta página foi editada pela última vez às 22h22min de 16 de maio de
+          2024.
+        </li>
+        <li>
+          Este texto é disponibilizado nos termos da licença
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt"
+            >Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0) da
+            Creative Commons</a
+          >; pode estar sujeito a condições adicionais. Para mais detalhes,
+          consulte as
+          <a
+            href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use"
+            >condições de utilização</a
+          >.
+        </li>
+      </ul>
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/pt-br"
+              >Política de privacidade</a
+            >
+          </li>
+          <li>
+            <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Sobre"
+              >Sobre a Wikipédia</a
+            >
+          </li>
+          <li>
+            <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Aviso_geral"
+              >Avisos gerais</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct"
+              >Código de conduta</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
